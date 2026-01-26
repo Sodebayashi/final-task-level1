@@ -71,6 +71,56 @@
             min-width: 676px;
         }
 
+        .circle {
+            transform: rotate(-90deg);
+        }
+
+        .circle circle {
+            fill: none;
+            stroke-width: 14px;
+        }
+
+        .circle circle:nth-child(1) {
+            stroke: #007bff;
+            stroke-dasharray: 32, 100;
+            stroke-dashoffset: 0;
+        }
+
+        .circle circle:nth-child(2) {
+            stroke: #dc3545;
+            stroke-dasharray: 25, 100;
+            stroke-dashoffset: 93
+        }
+
+        .circle circle:nth-child(3) {
+            stroke: #ffc107;
+            stroke-dasharray: 20, 100;
+            stroke-dashoffset: 63;
+        }
+
+        .circle circle:nth-child(4) {
+            stroke: #0dcaf0;
+            stroke-dasharray: 14, 100;
+            stroke-dashoffset: 37;
+        }
+
+        .circle circle:nth-child(5) {
+            stroke: #6c757d;
+            stroke-dasharray: 9, 100;
+            stroke-dashoffset: 18;
+        }
+
+        .label {
+            transform: rotate(90deg);
+            transform-origin: 50% 50%;
+            font-size: 2px;
+            font-weight: bold;
+            fill: #fff;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+        }
+
         @media (max-width: 767px) {
 
             /* sm以下 */
@@ -770,6 +820,25 @@
                     </div>
                     <div class="card-body">
                         <div class="mb-3">
+                            <div class="graph-wrap">
+                                <svg class="circle" viewBox="0 0 64 64">
+                                    <circle cx="50%" cy="50%" r="15.9154"></circle>
+                                    <circle cx="50%" cy="50%" r="15.9154"></circle>
+                                    <circle cx="50%" cy="50%" r="15.9154"></circle>
+                                    <circle cx="50%" cy="50%" r="15.9154"></circle>
+                                    <circle cx="50%" cy="50%" r="15.9154"></circle>
+                                    <text x="46" y="25" class="label blue">32%</text>
+                                    <text x="45" y="22" class="label blue">ファンタジー</text>
+                                    <text x="38" y="48" class="label red">25%</text>
+                                    <text x="38" y="45" class="label red">恋愛</text>
+                                    <text x="18" y="41" class="label yellow">20%</text>
+                                    <text x="18" y="38" class="label yellow">アクション</text>
+                                    <text x="18" y="25" class="label cyan">14%</text>
+                                    <text x="18" y="22" class="label cyan">SF</text>
+                                    <text x="28" y="18" class="label gray">9%</text>
+                                    <text x="27" y="15" class="label gray">その他</text>
+                                </svg>
+                            </div>
                             <div class="d-flex justify-content-between mb-2">
                                 <span><span class="badge bg-primary">ファンタジー</span></span>
                                 <strong>28作品</strong>

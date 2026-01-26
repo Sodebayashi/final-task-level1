@@ -61,5 +61,5 @@ A/Bともに、授業数が2コマ足りないので、2コマ分は調整期間
 - index.htmlのジャンルから探すの要素を横に4つ並んでいる状態(col-md-3)から、2×2(col-md-6)に変更
 - index.htmlの人気ランキングを2×2からカルーセルに変更
 - anime-detail.htmlのカルーセル画像をcontainer外に置き、横いっぱいに表示するように変更
-- anime-mylist.htmlの評価欄の星と評価値が縦に並んでいたのを横並びに変更
 - anime-password.htmlを作成
+- anime-mylist.htmlのジャンル別統計に円グラフを追加
